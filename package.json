@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "connected-react-router": "^6.9.1",
+    "cypress": "^8.2.0",
     "history": "^4.10.1",
     "marked": "^2.0.3",
     "prop-types": "^15.7.2",
