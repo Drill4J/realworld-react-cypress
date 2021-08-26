@@ -34,7 +34,7 @@ const ArticlePreview = React.memo(props => {
   };
 
   return (
-    <div className="article-preview">
+    <div className="article-preview" data-test="article-preview">
       <div className="article-meta">
         <Link to={`/@${article.author.username}`}>
           <img src={article.author.image || 'https://static.productionready.io/images/smiley-cyrus.jpg'} alt={article.author.username} />
@@ -50,7 +50,7 @@ const ArticlePreview = React.memo(props => {
         </div>
 
         <div className="pull-xs-right">
-          <button className={favoriteButtonClass} onClick={handleClick}>
+          <button className={favoriteButtonClass} onClick={handleClick} data-test="toggle-favorite-button">
             <i className="ion-heart"></i> {article.favoritesCount}
           </button>
         </div>

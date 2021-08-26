@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Shortest article ever?",
+    "description": "Do we even consider this an article",
+    "body": "Nope!",
+    "tagList": ["not-an-article", "whatever", "ok"]
+  },
+  {
+    "title": "Is the average octopus is as intelligent as 5-year-old kid?",
+    "description": "Learn about stunning mental abilities of our soft-bodied oceanic neighbors",
+    "body": "Octopuses are highly intelligent.\nMaze and problem-solving experiments have shown evidence of a memory system that can store both short- and long-term memory.\nIt is not known precisely what contribution learning makes to adult octopus behaviour.Young octopuses learn nothing from their parents, as adults provide no parental care beyond tending to their eggs until the young octopuses hatch.",
+    "tagList": ["ocean", "intelligence", "aliens"]
+  },
+  {
+    "title": "Cosmic voids - the best pick for cozy travel",
+    "description": "Can a product of baryon acoustic oscillations become your next favorite resort?",
+    "body": "Cosmic voids are vast spaces between filaments (the largest-scale structures in the universe), which contain very few or no galaxies. Voids typically have a diameter of 10 to 100 megaparsecs (30 to 300 million light years); particularly large voids, defined by the absence of rich superclusters, are sometimes called supervoids.",
+    "tagList": ["space", "voids", "travel", "retreats"]
+  },
+  {
+    "title": "Alex or Alexa?",
+    "description": "Let's find out if state-of-the-art AI methods caught up yet with the world's most advanced parrots",
+    "body": "Alex (May 1976 - 6 September 2007) was a grey parrot and the subject of a thirty-year experiment by animal psychologist Irene Pepperberg, initially at the University of Arizona and later at Harvard University and Brandeis University.\nHe was compared to Albert Einstein and at two years old was correctly answering questions made for six-year-olds\nAlex's ability to ask questions (and to answer to Pepperberg's questions with his own questions) is documented in numerous articles and interviews.\nOut state-of-the-art AI algorithms are yet to demonstrate such ability, depending on whom you ask. Some state that the ability to ask questions 'by it's own will' is crucial, others state that 'will' is a murky subject, completely reliant on a weak statement of the universe not being deterministic",
+    "tagList": ["intelligence", "ai", "transparrotism"]
+  }
+]

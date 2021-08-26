@@ -86,11 +86,23 @@ const Profile = {
     requests.del(`/profiles/${username}/follow`)
 };
 
-export default {
+const agent = {
   Articles,
   Auth,
   Comments,
   Profile,
   Tags,
-  setToken: _token => { token = _token; }
+  setToken: _token => { token = _token; },
+  setAuthToken: (token) => {
+    window.localStorage.setItem('jwt', token);
+    agent.setToken(token);
+  },
+  logout: () => {
+    window.localStorage.setItem('jwt', '');
+    agent.setToken(null);
+  }
 };
+
+window.appAgent = agent;
+
+export default agent;

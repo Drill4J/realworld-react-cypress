@@ -108,6 +108,7 @@ class Editor extends React.PureComponent {
                       className='form-control form-control-lg'
                       type='text'
                       placeholder='Article Title'
+                      data-test='article-title-input'
                       value={this.props.title || ''}
                       onChange={this.changeTitle} />
                   </fieldset>
@@ -117,6 +118,7 @@ class Editor extends React.PureComponent {
                       className='form-control'
                       type='text'
                       placeholder="What's this article about?"
+                      data-test='article-description-input'
                       value={this.props.description || ''}
                       onChange={this.changeDescription} />
                   </fieldset>
@@ -125,6 +127,7 @@ class Editor extends React.PureComponent {
                     <textarea
                       className='form-control'
                       rows='8'
+                      data-test='article-body-input'
                       placeholder='Write your article (in markdown)'
                       value={this.props.body || ''}
                       onChange={this.changeBody} />
@@ -135,6 +138,7 @@ class Editor extends React.PureComponent {
                       className='form-control'
                       type='text'
                       placeholder='Enter tags'
+                      data-test='article-tags-input'
                       value={this.props.tagInput || ''}
                       onChange={this.changeTagInput}
                       onKeyUp={this.watchForEnter} />
@@ -157,6 +161,7 @@ class Editor extends React.PureComponent {
                   <button
                     className='btn btn-lg pull-xs-right btn-primary'
                     type='button'
+                    data-test='publish-article-button'
                     disabled={this.props.inProgress}
                     onClick={this.submitForm}>
                     Publish Article

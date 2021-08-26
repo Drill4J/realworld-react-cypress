@@ -50,6 +50,7 @@ class SettingsForm extends React.PureComponent {
               className='form-control'
               type='text'
               placeholder='URL of profile picture'
+              data-test='profile-picture-input'
               value={image || ''}
               onChange={this.updateState('image')}
             />
@@ -60,6 +61,7 @@ class SettingsForm extends React.PureComponent {
               className='form-control form-control-lg'
               type='text'
               placeholder='Username'
+              data-test='username-input'
               value={username || ''}
               onChange={this.updateState('username')}
             />
@@ -70,6 +72,7 @@ class SettingsForm extends React.PureComponent {
               className='form-control form-control-lg'
               rows='8'
               placeholder='Short bio about you'
+              data-test='bio-input'
               value={bio || ''}
               onChange={this.updateState('bio')}
             />
@@ -81,6 +84,7 @@ class SettingsForm extends React.PureComponent {
               autoComplete='username'
               type='email'
               placeholder='Email'
+              data-test='email-input'
               value={email || ''}
               onChange={this.updateState('email')}
             />
@@ -91,6 +95,7 @@ class SettingsForm extends React.PureComponent {
               className='form-control form-control-lg'
               type='password'
               autoComplete='current-password'
+              data-test='password-input'
               placeholder='New Password'
               value={this.state.password}
               onChange={this.updateState('password')}

@@ -18,7 +18,7 @@ const ArticleList = React.memo(props => {
   }
 
   return (
-    <div>
+    <div data-test="article-list">
       {
         props.articles.map(article => {
           return (
