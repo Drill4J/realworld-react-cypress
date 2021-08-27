@@ -53,3 +53,23 @@ context('Home - logged in', () => {
     })
   })
 })
+
+function add(args) {
+  return args.reduce((prev, curr) => prev + curr, 0);
+}
+
+context('add()', () => {
+  const tests = (new Array(50)).fill(1).map((_,i) => ({args: [2, i], expected: 2 + i}));
+
+  beforeEach(() => {
+    cy.visit('/')
+    cy.wait(1000)
+  })
+
+  tests.forEach(({args, expected}) => {
+    it.only(`correctly adds ${args[0]} and ${args[1]}`, function() {
+      const res = add(args);
+      assert.strictEqual(res, expected);
+    });
+  });
+})
