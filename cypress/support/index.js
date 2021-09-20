@@ -1,3 +1,5 @@
 import './commands'
-import './prepare-db'
-import '../../src/agent'
+import './setup'
+
+import agent from '../../src/agent'
+window.appAgent = agent;

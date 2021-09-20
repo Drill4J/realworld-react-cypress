@@ -103,6 +103,4 @@ const agent = {
   }
 };
 
-window.appAgent = agent;
-
 export default agent;
