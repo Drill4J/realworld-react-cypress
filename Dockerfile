@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM docker2021repos/nginx:latest
 
 # Copy nginx config
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
