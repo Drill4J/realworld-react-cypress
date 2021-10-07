@@ -67,7 +67,7 @@ context('add()', () => {
   })
 
   tests.forEach(({args, expected}) => {
-    it.only(`correctly adds ${args[0]} and ${args[1]}`, function() {
+    it(`correctly adds ${args[0]} and ${args[1]}`, function() {
       const res = add(args);
       assert.strictEqual(res, expected);
     });
